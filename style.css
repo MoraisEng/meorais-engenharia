@@ -1,46 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ADD8E6;
-    color: #032B44;
-}
-
-header {
-    background-color: #032B44;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
-
-main {
-    padding: 1em;
-}
-
-section {
-    background-color: white;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-    margin-top: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 0.5em;
-}
-
-a {
-    text-decoration: none;
-    color: #032B44;
-}
-
-a:hover {
-    text-decoration: underline;
+@media (max-width: 768px) {
+  .logo {
+    width: 50px; /* ajuste o tamanho da logo */
+    position: relative; /* ajuste a posição da logo */
+    top: 0;
+    left: 0;
+  }
+  .titulo {
+    margin-left: 60px; /* ajuste a margem do título */
+  }
 }
