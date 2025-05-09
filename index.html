@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Morais Engenharia - Mapas de Setores</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morais Engenharia – Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo">
-    <h1>Morais Engenharia - Mapas de Setores</h1>
+    <img src="logo.png" alt="Logo" />
+    <h1>Morais Engenharia – Mapas de Setores</h1>
   </header>
+
   <main>
     <div class="buttons">
-      <button onclick="acessarArea('interna','1')">ÁREA INTERNA</button>
-      <button onclick="acessarArea('corretores','2')">ÁREA DOS CORRETORES</button>
-    </div>
-
-    <div id="areaInterna" class="area" style="display:none;">
-      <h2>ÁREA INTERNA</h2>
-      <ul>
-        <li><a href="#" onclick="acessarMapa('LOTES/INVESTIDORES','1','https://app.powerbi.com/view?r=eyJrIjoiNGYwZTI3ZDEtNDExNy00MTg3LWE3ZGUtNTA5OGI5NzdlMGY0IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9')">LOTES/INVESTIDORES</a></li>
-        <li><a href="#" onclick="acessarMapa('VENDAS INTERNO','1','https://app.powerbi.com/view?r=eyJrIjoiMGFkNDlhMDAtYjg0My00ZDgxLTlkZjAtMjU1YjM2ZmNkNTlmIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9&pageName=728fcad39074d20dd500')">VENDAS INTERNO</a></li>
-      </ul>
-    </div>
-
-    <div id="areaCorretores" class="area" style="display:none;">
-      <h2>ÁREA DOS CORRETORES</h2>
-      <ul>
-        <li><a href="#" onclick="acessarMapa('VENDA CORETORES','2','https://app.powerbi.com/view?r=eyJrIjoiNjI0OTEwMjAtYzIyYS00ZDYyLWEzYzctY2VlNzM5NGE4NTM2IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9')">VENDA CORETORES</a></li>
-      </ul>
+      <button onclick="entrarArea('interna.html','1')">ÁREA INTERNA</button>
+      <button onclick="entrarArea('corretores.html','2')">ÁREA DOS CORRETORES</button>
     </div>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
