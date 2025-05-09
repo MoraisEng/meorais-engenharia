@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morais Engenharia – Área Interna</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morais Engenharia – Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo" />
-    <h1>ÁREA INTERNA</h1>
+    <h1>Morais Engenharia – Mapas de Setores</h1>
   </header>
 
-  <main class="area">
-    <ul>
-      <li><a href="#" onclick="acessarMapa('LOTES/INVESTIDORES','1','https://app.powerbi.com/…')">LOTES/INVESTIDORES</a></li>
-      <li><a href="#" onclick="acessarMapa('VENDAS INTERNO','1','https://app.powerbi.com/…')">VENDAS INTERNO</a></li>
-    </ul>
+  <main>
+    <div class="buttons">
+      <button onclick="entrarArea('interna.html','1')">ÁREA INTERNA</button>
+      <button onclick="entrarArea('corretores.html','2')">ÁREA DOS CORRETORES</button>
+    </div>
   </main>
 
   <script src="script.js"></script>
