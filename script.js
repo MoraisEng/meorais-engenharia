@@ -1,18 +1,14 @@
-function acessarArea(areaId, senha) {
-  const input = prompt(`Digite a senha para acessar a ${areaId === 'interna' ? 'ÁREA INTERNA' : 'ÁREA DOS CORRETORES'}:`);
+function entrarArea(pagina, senha) {
+  const input = prompt('Digite a senha:');
   if (input === senha) {
-    document.getElementById('areaInterna').style.display = (areaId === 'interna') ? 'block' : 'none';
-    document.getElementById('areaCorretores').style.display = (areaId === 'corretores') ? 'block' : 'none';
+    window.location.href = pagina;
   } else {
     alert('Senha incorreta!');
   }
 }
 
-function acessarMapa(nomeMapa, senha, urlMapa) {
-  const senhaInformada = prompt(`Digite a senha para acessar ${nomeMapa}:`);
-  if (senhaInformada === senha) {
-    window.open(urlMapa, '_blank');
-  } else {
-    alert('Senha incorreta!');
-  }
+function acessarMapa(nomeMapa, senha, url) {
+  const s = prompt(`Senha para ${nomeMapa}:`);
+  if (s === senha) window.open(url, '_blank');
+  else alert('Senha incorreta!');
 }
