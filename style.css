@@ -1,63 +1,30 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ADD8E6;
-  color: #032B44;
-  margin: 0;
+  background: #ADD8E6; color: #032B44; margin: 0;
 }
 header {
-  background-color: #032B44;
-  color: white;
-  padding: 1em;
-  text-align: center;
-  position: relative;
+  background: #032B44; color: #fff; padding: 1em; text-align: center; position: relative;
 }
 header img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 100px;
-  height: auto;
+  position: absolute; top: 10px; left: 10px; width: 100px; height: auto;
 }
 .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin: 2em 0;
+  display: flex; justify-content: center; gap: 1em; margin: 2em 0;
 }
 .buttons button {
-  padding: 0.8em 1.5em;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: .8em 1.5em; font-size: 1em; border: none; border-radius: 5px;
+  cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 .area {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 1em;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px; margin: 2em auto; background: #fff; padding: 1em;
+  border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.area h2 {
-  margin-top: 0;
-}
-.area ul {
-  list-style: none;
-  padding: 0;
-}
-.area li {
-  margin-bottom: 0.5em;
-}
-.area a {
-  text-decoration: none;
-  color: #032B44;
-}
-.area a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 768px) {
-  header img { width: 50px; top: 5px; left: 5px; }
-  header h1 { font-size: 1.2em; }
+.area ul { list-style: none; padding: 0; }
+.area li { margin-bottom: .5em; }
+.area a { text-decoration: none; color: #032B44; }
+.area a:hover { text-decoration: underline; }
+
+@media (max-width:768px){
+  header img{ width:50px; top:5px; left:5px; }
+  header h1{ font-size:1.2em; }
 }
