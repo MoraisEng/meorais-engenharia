@@ -56,6 +56,23 @@
     .card a:hover {
       text-decoration: underline;
     }
+
+    /* RESPONSIVO PARA CELULARES */
+    @media (max-width: 768px) {
+      .split {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: 1;
+        max-width: 100%;
+      }
+      iframe {
+        height: 400px;
+      }
+      .card {
+        margin-top: 1em;
+      }
+    }
   </style>
 </head>
 <body>
