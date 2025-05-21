@@ -3,23 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MORAIS ENGENHARIA – HOME</title>
+  <title>MORAIS ENGENHARIA – MAPAS DE SETORES</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo" />
-    <h1 style="text-transform: uppercase;">MORAIS ENGENHARIA – MAPAS DE SETORES</h1>
+    <h1>MORAIS ENGENHARIA – MAPAS DE SETORES</h1>
   </header>
 
   <main>
     <div class="buttons">
-      <button onclick="entrarArea('interna.html','1')">ÁREA INTERNA</button>
-      <button onclick="entrarArea('corretores.html','2')">ÁREA DOS CORRETORES</button>
+      <button onclick="mostrarSecao('terrabela')">TERRABELA DO CERRADO II</button>
+      <button onclick="mostrarSecao('ipanema')">RESIDENCIAL IPANEMA</button>
     </div>
+
+    <!-- Seção Terrabela -->
+    <section id="terrabela" class="area" style="display:none;">
+      <h2>TERRABELA DO CERRADO II</h2>
+      <h3>1 – LINKS MAPAS</h3>
+      <ul>
+        <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNGYwZTI3ZDEtNDExNy00MTg3LWE3ZGUtNTA5OGI5NzdlMGY0IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LOTES/INVESTIDORES MAPA</a></li>
+        <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMGFkNDlhMDAtYjg0My00ZDgxLTlkZjAtMjU1YjM2ZmNkNTlmIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">VENDAS INTERNO MAPA</a></li>
+      </ul>
+      <h3>2 – LINKS DE EDIÇÃO</h3>
+      <ul>
+        <li><a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!s802cfac70eb340158511bcf0d8738fa7&cid=1ac9fedf303b684a" target="_blank">LOTES/INVESTIDORES EXCEL</a></li>
+        <li><a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!sed3825a0745a4565bef91b74051af47e&cid=1ac9fedf303b684a" target="_blank">VENDAS INTERNO EXCEL</a></li>
+      </ul>
+    </section>
+
+    <!-- Seção Ipanema -->
+    <section id="ipanema" class="area" style="display:none;">
+      <h2>RESIDENCIAL IPANEMA</h2>
+      <h3>1 – LINKS MAPAS</h3>
+      <ul>
+        <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMDIzZjdjZmUtYmNiOC00MTFkLWJlYjMtZWZiNzNlM2IzNWUzIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LOTES/INVESTIDORES MAPA</a></li>
+        <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNzkxYTVjNzgtNmEwNS00ZjYzLWI0OTYtNzNlMTYzZmQ5Y2ZlIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">VENDAS INTERNO MAPA</a></li>
+      </ul>
+      <h3>2 – LINKS DE EDIÇÃO</h3>
+      <ul>
+        <li><a href="https://onedrive.live.com/:x:/g/personal/1AC9FEDF303B684A/EaSknPUKcc5FrBTqQi_dF44B5y9G4lvCr32-EhnrpZ33Ug?resid=1AC9FEDF303B684A!sf59ca4a4710a45ceac14ea422fdd178e&ithint=file%2Cxlsx&e=T9kG0L" target="_blank">LOTES/INVESTIDORES EXCEL</a></li>
+        <li><a href="https://onedrive.live.com/:x:/g/personal/1AC9FEDF303B684A/EekNlre4OXZApjgLNO_AAYsBP1awzDkvQPVTpU8XAGFKrw?resid=1AC9FEDF303B684A!sb7960de939b84076a6380b34efc0018b&ithint=file%2Cxlsx&e=dGHEDE" target="_blank">VENDAS INTERNO EXCEL</a></li>
+      </ul>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
