@@ -6,19 +6,19 @@
   <title>MORAIS ENGENHARIA – ÁREA INTERNA</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Layout de duas colunas */
     .split {
       display: flex;
-      gap: 1em;
-      margin-top: 1em;
+      gap: 2em;
+      margin: 1em;
     }
-    .split .left, .split .right {
+    .left {
       flex: 1;
+      max-width: 400px;
     }
-    .split .left {
-      max-width: 300px;
+    .right {
+      flex: 2;
     }
-    .split iframe {
+    iframe {
       width: 100%;
       height: 600px;
       border: none;
@@ -33,71 +33,44 @@
     <h1 style="text-transform: uppercase;">ÁREA INTERNA</h1>
   </header>
 
-  <main>
-    <div class="buttons">
-      <button onclick="mostrarArea('terrabela')">TERRABELA DO CERRADO II</button>
-      <button onclick="mostrarArea('ipanema')">RESIDENCIAL IPANEMA</button>
+  <main class="split">
+    <div class="left">
+      <section>
+        <h2>TERRABELA DO CERRADO II</h2>
+        <h3>1 – LINKS MAPAS</h3>
+        <ul>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNGYwZTI3ZDEtNDExNy00MTg3LWE3ZGUtNTA5OGI5NzdlMGY0IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LOTES/INVESTIDORES MAPA</a></li>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMGFkNDlhMDAtYjg0My00ZDgxLTlkZjAtMjU1YjM2ZmNkNTlmIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">VENDAS INTERNO MAPA</a></li>
+        </ul>
+        <h3>2 – LINKS DE EDIÇÃO</h3>
+        <ul>
+          <li><a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!s802cfac70eb340158511bcf0d8738fa7&cid=1ac9fedf303b684a" target="_blank">LOTES/INVESTIDORES EXCEL</a></li>
+          <li><a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!sed3825a0745a4565bef91b74051af47e&cid=1ac9fedf303b684a" target="_blank">VENDAS INTERNO EXCEL</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>RESIDENCIAL IPANEMA</h2>
+        <h3>1 – LINKS MAPAS</h3>
+        <ul>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMDIzZjdjZmUtYmNiOC00MTFkLWJlYjMtZWZiNzNlM2IzNWUzIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LOTES/INVESTIDORES MAPA</a></li>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNzkxYTVjNzgtNmEwNS00ZjYzLWI0OTYtNzNlMTYzZmQ5Y2ZlIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">VENDAS INTERNO MAPA</a></li>
+        </ul>
+        <h3>2 – LINKS DE EDIÇÃO</h3>
+        <ul>
+          <li><a href="https://onedrive.live.com/:x:/g/personal/1AC9FEDF303B684A/EaSknPUKcc5FrBTqQi_dF44B5y9G4lvCr32-EhnrpZ33Ug?resid=1AC9FEDF303B684A!sf59ca4a4710a45ceac14ea422fdd178e&ithint=file%2Cxlsx" target="_blank">LOTES/INVESTIDORES EXCEL</a></li>
+          <li><a href="https://onedrive.live.com/:x:/g/personal/1AC9FEDF303B684A/EekNlre4OXZApjgLNO_AAYsBP1awzDkvQPVTpU8XAGFKrw?resid=1AC9FEDF303B684A!sb7960de939b84076a6380b34efc0018b&ithint=file%2Cxlsx" target="_blank">VENDAS INTERNO EXCEL</a></li>
+        </ul>
+      </section>
     </div>
 
-    <!-- Terrabela -->
-    <section id="terrabela" class="area" style="display:block;">
-      <h2>TERRABELA DO CERRADO II</h2>
-      <div class="split">
-        <div class="left">
-          <h3>1 – LINKS MAPAS</h3>
-          <ul>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNGYwZTI3ZDEtNDExNy00MTg3LWE3ZGUtNTA5OGI5NzdlMGY0IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LOTES/INVESTIDORES MAPA</a></li>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMGFkNDlhMDAtYjg0My00ZDgxLTlkZjAtMjU1YjM2ZmNkNTlmIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">VENDAS INTERNO MAPA</a></li>
-          </ul>
-          <h3>2 – LINKS DE EDIÇÃO</h3>
-          <ul>
-            <li><a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!s802cfac70eb340158511bcf0d8738fa7&cid=1ac9fedf303b684a" target="_blank">LOTES/INVESTIDORES EXCEL</a></li>
-            <li><a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!sed3825a0745a4565bef91b74051af47e&cid=1ac9fedf303b684a" target="_blank">VENDAS INTERNO EXCEL</a></li>
-          </ul>
-        </div>
-        <div class="right">
-          <iframe 
-            title="Dashboard Terrabela"
-            src="https://app.powerbi.com/view?r=eyJrIjoiMTExOTA0YjgtYzViNi00NDA2LWFkMDYtZTE2NWNiOTRlNDIzIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9"
-            allowFullScreen="true">
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ipanema -->
-    <section id="ipanema" class="area" style="display:none;">
-      <h2>RESIDENCIAL IPANEMA</h2>
-      <div class="split">
-        <div class="left">
-          <h3>1 – LINKS MAPAS</h3>
-          <ul>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMDIzZjdjZmUtYmNiOC00MTFkLWJlYjMtZWZiNzNlM2IzNWUzIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LOTES/INVESTIDORES MAPA</a></li>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNzkxYTVjNzgtNmEwNS00ZjYzLWI0OTYtNzNlMTYzZmQ5Y2ZlIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">VENDAS INTERNO MAPA</a></li>
-          </ul>
-          <h3>2 – LINKS DE EDIÇÃO</h3>
-          <ul>
-            <li><a href="https://onedrive.live.com/:x:/g/personal/1AC9FEDF303B684A/EaSknPUKcc5FrBTqQi_dF44B5y9G4lvCr32-EhnrpZ33Ug?resid=1AC9FEDF303B684A!sf59ca4a4710a45ceac14ea422fdd178e&ithint=file%2Cxlsx&e=T9kG0L" target="_blank">LOTES/INVESTIDORES EXCEL</a></li>
-            <li><a href="https://onedrive.live.com/:x:/g/personal/1AC9FEDF303B684A/EekNlre4OXZApjgLNO_AAYsBP1awzDkvQPVTpU8XAGFKrw?resid=1AC9FEDF303B684A!sb7960de939b84076a6380b34efc0018b&ithint=file%2Cxlsx&e=dGHEDE" target="_blank">VENDAS INTERNO EXCEL</a></li>
-          </ul>
-        </div>
-        <div class="right">
-          <iframe
-            title="Dashboard Terrabela"
-            src="https://app.powerbi.com/view?r=eyJrIjoiMTExOTA0YjgtYzViNi00NDA2LWFkMDYtZTE2NWNiOTRlNDIzIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9"
-            allowFullScreen="true">
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- Área dos Corretores permanece igual ou pode ajustar similarmente -->
-    <section id="corretores" class="area" style="display:none;">
-      <h2 style="text-transform: uppercase;">ÁREA DOS CORRETORES</h2>
-      <!-- aqui você pode repetir o mesmo split para o dashboard de corretores -->
-    </section>
+    <div class="right">
+      <iframe
+        title="DASHBOARD GERAL"
+        src="https://app.powerbi.com/view?r=eyJrIjoiMTExOTA0YjgtYzViNi00NDA2LWFkMDYtZTE2NWNiOTRlNDIzIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9"
+        allowFullScreen="true">
+      </iframe>
+    </div>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
