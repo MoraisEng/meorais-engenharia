@@ -1,6 +1,14 @@
-function mostrarSecao(id) {
-  // esconde todas
-  document.querySelectorAll('section.area').forEach(sec => sec.style.display = 'none');
-  // mostra a desejada
-  document.getElementById(id).style.display = 'block';
+function entrarArea(pagina, senha) {
+  const input = prompt('Digite a senha:');
+  if (input === senha) {
+    window.location.href = pagina;
+  } else {
+    alert('Senha incorreta!');
+  }
+}
+
+function mostrarInterna(id) {
+  document.getElementById('terrabela').style.display = 'none';
+  document.getElementById('ipanema').style.display  = 'none';
+  document.getElementById(id).style.display         = 'block';
 }
