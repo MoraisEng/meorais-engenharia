@@ -4,6 +4,9 @@ function mostrarArea(id) {
 }
 
 function mostrarSecao(id) {
-  document.querySelectorAll('div.subarea').forEach(sa => sa.style.display = 'none');
+  document.querySelectorAll('.subarea, .left, .right').forEach(el => {
+    if (el.id) el.style.display = 'none';
+  });
   document.getElementById(id).style.display = 'block';
 }
+
