@@ -1,4 +1,3 @@
-/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
   background-color: #ADD8E6;
@@ -30,23 +29,37 @@ header h1 {
   text-transform: uppercase;
 }
 
-/* Área principal */
-main {
+/* Layout dividido */
+.split {
+  display: flex;
+  gap: 2em;
   padding: 1em;
 }
 
-/* Cards de empreendimentos */
-.area {
-  max-width: 1000px;
-  margin: 0 auto;
+.left {
+  flex: 0.45;
 }
 
+.right {
+  flex: 0.55;
+}
+
+/* Dashboard */
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Cards */
 .card {
   background-color: white;
   padding: 1em;
   margin-bottom: 1.5em;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .card h2 {
@@ -57,8 +70,8 @@ main {
 
 .card h3 {
   font-size: 1em;
-  color: #032B44;
   margin-bottom: 0.5em;
+  color: #032B44;
 }
 
 .card ul {
@@ -72,49 +85,38 @@ main {
 
 .card a {
   color: #032B44;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .card a:hover {
   text-decoration: underline;
 }
 
-/* Botões da página inicial */
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin: 2em 0;
-}
-
-.buttons button {
-  padding: 0.8em 1.5em;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  background-color: #032B44;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.buttons button:hover {
-  background-color: #024066;
-}
-
 /* Responsivo para celular */
 @media (max-width: 768px) {
-  header img {
-    width: 60px;
-    margin-bottom: 0.5em;
+  .split {
+    flex-direction: column;
   }
 
-  header h1 {
-    font-size: 1.2em;
+  .left, .right {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  iframe {
+    height: 400px;
   }
 
   .card {
     margin: 1em;
+  }
+
+  header h1 {
+    font-size: 1.3em;
+  }
+
+  header img {
+    width: 60px;
   }
 }
