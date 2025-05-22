@@ -1,12 +1,17 @@
-function mostrarArea(id) {
-  document.querySelectorAll('section.area').forEach(sec => sec.style.display = 'none');
-  document.getElementById(id).style.display = 'block';
+function entrarArea(pagina, senhaCorreta) {
+  const senha = prompt('Digite a senha:');
+  if (senha === senhaCorreta) {
+    window.location.href = pagina;
+  } else {
+    alert('Senha incorreta!');
+  }
 }
 
-function mostrarSecao(id) {
-  document.querySelectorAll('.subarea, .left, .right').forEach(el => {
-    if (el.id) el.style.display = 'none';
-  });
-  document.getElementById(id).style.display = 'block';
+function abrirComSenha(senhaCorreta, url) {
+  const senha = prompt('Digite a senha para acessar o documento:');
+  if (senha === senhaCorreta) {
+    window.open(url, '_blank');
+  } else {
+    alert('Senha incorreta!');
+  }
 }
-
