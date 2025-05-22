@@ -3,31 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MORAIS ENGENHARIA – MAPAS DE SETORES</title>
+  <title>MORAIS ENGENHARIA – HOME</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo" />
-    <h1 style="text-transform: uppercase;">MORAIS ENGENHARIA – MAPAS DE SETORES</h1>
+    <h1>MORAIS ENGENHARIA – MAPAS DE SETORES</h1>
   </header>
 
   <main>
     <div class="buttons">
-      <button onclick="entrarArea('interna.html', '1')">ÁREA INTERNA</button>
-      <button onclick="entrarArea('corretores.html', '2')">ÁREA DOS CORRETORES</button>
+      <button onclick="entrarArea('interna.html','morais_interno@')">ÁREA INTERNA</button>
+      <button onclick="entrarArea('corretores.html','2')">ÁREA DOS CORRETORES</button>
     </div>
   </main>
 
-  <script>
-    function entrarArea(pagina, senhaCorreta) {
-      const senha = prompt('Digite a senha:');
-      if (senha === senhaCorreta) {
-        window.location.href = pagina;
-      } else {
-        alert('Senha incorreta!');
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
