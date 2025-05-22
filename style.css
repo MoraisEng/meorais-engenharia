@@ -1,3 +1,4 @@
+/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
   background-color: #ADD8E6;
@@ -29,7 +30,7 @@ header h1 {
   text-transform: uppercase;
 }
 
-/* Layout dividido */
+/* Layout com colunas (desktop) */
 .split {
   display: flex;
   gap: 2em;
@@ -53,7 +54,7 @@ iframe {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Cards */
+/* Cards de empreendimentos */
 .card {
   background-color: white;
   padding: 1em;
@@ -93,7 +94,7 @@ iframe {
   text-decoration: underline;
 }
 
-/* Responsivo para celular */
+/* Responsivo: colunas viram blocos empilhados no celular */
 @media (max-width: 768px) {
   .split {
     flex-direction: column;
