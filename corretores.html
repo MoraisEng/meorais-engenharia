@@ -6,6 +6,11 @@
   <title>MORAIS ENGENHARIA – ÁREA CORRETORES</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    body {
+      background-color: #d6eaf8;
+      font-family: Arial, sans-serif;
+    }
+
     main {
       display: flex;
       flex-wrap: wrap;
@@ -14,26 +19,27 @@
     }
 
     .left, .right {
-      background: white;
+      background: #e8f4fa;
       border-radius: 8px;
       padding: 1em;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .left {
-      flex: 1 1 60%;
-      min-width: 300px;
+      flex: 1 1 20%;
+      min-width: 200px;
     }
 
     .right {
-      flex: 1 1 35%;
-      min-width: 250px;
+      flex: 1 1 75%;
+      min-width: 300px;
     }
 
     .right h2, .left h2 {
       color: #032B44;
       font-size: 1.2em;
       margin-bottom: 1em;
+      font-weight: bold;
     }
 
     iframe {
@@ -41,6 +47,21 @@
       height: 500px;
       border: none;
       border-radius: 5px;
+    }
+
+    .pdf-link {
+      margin-top: 1em;
+      display: block;
+      color: #032B44;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 2em;
+      padding: 1em;
+      text-align: center;
+      font-size: 0.95em;
+      color: #032B44;
     }
 
     @media (max-width: 768px) {
@@ -65,23 +86,30 @@
   </header>
 
   <main>
-    <!-- DASHBOARD -->
+    <!-- MAPAS E PDF -->
     <div class="left">
-      <h2>CASAS À VENDA</h2>
+      <h2>📍 <strong>MAPAS</strong></h2>
+      <p>Em breve você poderá acessar os mapas por aqui.</p>
+      <a class="pdf-link" href="https://drive.google.com/file/d/1qz2KeWvoUt13BcqVFoDo5UTKmL0D_ADE/view?usp=sharing" target="_blank">
+        📄 PDF DE VENDAS
+      </a>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="right">
+      <h2>📋 <strong>LISTA DOS MEUS IMÓVEIS DISPONÍVEIS</strong></h2>
       <iframe
         title="DASHBOARD CORRETORES"
         src="https://app.powerbi.com/view?r=eyJrIjoiYjEwM2I3ZmQtY2M0My00NGQ3LWE4NGUtMDgxYTk0NjNkMTVjIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9"
         allowFullScreen="true">
       </iframe>
     </div>
-
-    <!-- MAPAS (BOTÕES FUTUROS) -->
-    <div class="right">
-      <h2>MAPAS</h2>
-      <!-- Botões em desenvolvimento -->
-      <p>Em breve você poderá acessar os mapas por aqui.</p>
-    </div>
   </main>
+
+  <footer>
+    * CASO QUEIRA PEGAR AS CHAVES, CONHECER OS IMÓVEIS OU RECEBER FOTOS DOS MESMOS, ENTRAR EM CONTATO COM <br />
+    JULIANA 99427-3636 - COORDENADORA DE VENDAS OU JÚLIO CÉSAR 99213-2934 OU JOÃO VITOR 99266-5923
+  </footer>
 
   <script src="script.js"></script>
 </body>
