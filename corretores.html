@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MORAIS ENGENHARIA – ÁREA CORRETORES</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1em;
+      gap: 1.5em;
+    }
+
+    .left, .right {
+      background: white;
+      border-radius: 8px;
+      padding: 1em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .left {
+      flex: 1 1 60%;
+      min-width: 300px;
+    }
+
+    .right {
+      flex: 1 1 35%;
+      min-width: 250px;
+    }
+
+    .right h2, .left h2 {
+      color: #032B44;
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100%;
+      }
+
+      iframe {
+        height: 400px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,31 +64,23 @@
     <h1 style="text-transform: uppercase;">ÁREA DOS CORRETORES</h1>
   </header>
 
-  <main class="area">
-    <h2>TERRABELA DO CERRADO II</h2>
+  <main>
+    <!-- DASHBOARD -->
+    <div class="left">
+      <h2>CASAS À VENDA</h2>
+      <iframe
+        title="DASHBOARD CORRETORES"
+        src="https://app.powerbi.com/view?r=eyJrIjoiYjEwM2I3ZmQtY2M0My00NGQ3LWE4NGUtMDgxYTk0NjNkMTVjIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9"
+        allowFullScreen="true">
+      </iframe>
+    </div>
 
-    <h3>1 - LINKS MAPAS</h3>
-    <ul>
-      <li>
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiNjI0OTEwMjAtYzIyYS00ZDYyLWEzYzctY2VlNzM5NGE4NTM2IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">
-          VENDA CORRETORES MAPA
-        </a>
-      </li>
-    </ul>
-
-    <h3>2 - LINKS DE EDIÇÃO</h3>
-    <ul>
-      <li>
-        <a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!s802cfac70eb340158511bcf0d8738fa7&cid=1ac9fedf303b684a" target="_blank">
-          LOTES/INVESTIDORES EXCEL
-        </a>
-      </li>
-      <li>
-        <a href="https://onedrive.live.com/personal/1ac9fedf303b684a/_layouts/15/Doc.aspx?resid=1AC9FEDF303B684A!sed3825a0745a4565bef91b74051af47e&cid=1ac9fedf303b684a" target="_blank">
-          VENDAS INTERNO EXCEL
-        </a>
-      </li>
-    </ul>
+    <!-- MAPAS (BOTÕES FUTUROS) -->
+    <div class="right">
+      <h2>MAPAS</h2>
+      <!-- Botões em desenvolvimento -->
+      <p>Em breve você poderá acessar os mapas por aqui.</p>
+    </div>
   </main>
 
   <script src="script.js"></script>
