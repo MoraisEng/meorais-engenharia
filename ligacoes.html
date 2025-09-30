@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -36,15 +35,23 @@
       text-transform: uppercase;
     }
 
-    section {
-      padding: 1.5em;
+    main {
+      padding: 2em;
     }
 
-    h2 {
+    .quadro {
+      background: white;
+      border-radius: 8px;
+      padding: 1em;
+      margin-bottom: 2em;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .quadro h2 {
       color: #032B44;
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
+      font-size: 1.3em;
+      margin-bottom: 1em;
+      text-transform: uppercase;
     }
 
     iframe {
@@ -52,6 +59,7 @@
       height: 480px;
       border: none;
       border-radius: 5px;
+      margin-bottom: 1.5em;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -88,17 +96,22 @@
   </header>
 
   <main>
-    <section>
-      <h2>📋 VERIFICAÇÕES</h2>
+    <!-- Quadro 1: Conferências de Contas -->
+    <div class="quadro">
+      <h2>📋 CONFERÊNCIAS DE CONTAS</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMzJhYWJjM2EtMjEzMC00MWEwLThhYWMtZTE0MTdhYWM2M2VlIiwidCI6IjhiMTk2ODhiLWU5N2MtNDQ5Ny1hYjU4LTE1MDhkNDBkZTA1ZSJ9" allowfullscreen="true"></iframe>
-    </section>
-
-    <section>
-      <h2>📄 TABELA DE LIGAÇÕES</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYjhkZjRkYjktYzU3OS00NmEwLThiZmQtZmZjMGE0NmMyZDg0IiwidCI6IjhiMTk2ODhiLWU5N2MtNDQ5Ny1hYjU4LTE1MDhkNDBkZTA1ZSJ9" allowfullscreen="true"></iframe>
-    </section>
+    </div>
 
-    <section>
+    <!-- Quadro 2: Conferência de Ligações -->
+    <div class="quadro">
+      <h2>📄 CONFERÊNCIA DE LIGAÇÕES</h2>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiY2Q4YjI4YTItNGRkMC00ZTNkLWI3NzAtZThjNzgxMjZlNWFmIiwidCI6IjhiMTk2ODhiLWU5N2MtNDQ5Ny1hYjU4LTE1MDhkNDBkZTA1ZSJ9&pageName=999c09d740b003be9334" allowfullscreen="true"></iframe>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYjE5OTJjZWEtMTRmYS00NTI4LWJkYzItZWNmNmE1YmIzNmNhIiwidCI6IjhiMTk2ODhiLWU5N2MtNDQ5Ny1hYjU4LTE1MDhkNDBkZTA1ZSJ9" allowfullscreen="true"></iframe>
+    </div>
+
+    <!-- Quadro 3: Links -->
+    <div class="quadro">
       <h2>🔗 LINKS DE ACESSO</h2>
       <ul>
         <li>• <a href="https://1drv.ms/x/c/1ac9fedf303b684a/EVlszu2jRQ9GnEZ7oA1bz2sBURRB3MONwgQSv7fPm0txYg?e=XoFEWV" target="_blank">EXCEL CONTAS (EDITÁVEL)</a></li>
@@ -108,7 +121,7 @@
         <li>• <a href="https://app.powerbi.com/view?r=eyJrIjoiZmFlZjY2YWQtOGE3NC00ZTIyLTk1YjItNjJlODI2MjJlODJiIiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" target="_blank">LINK DASHBOARD PBI</a></li>
         <li>• SENHA SANEAGO: <strong>Saneago123</strong></li>
       </ul>
-    </section>
+    </div>
   </main>
 
   <script src="script.js"></script>
